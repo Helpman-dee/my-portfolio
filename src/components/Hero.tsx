@@ -16,6 +16,7 @@ import {
   Sparkles,
   FileCheck2
 } from 'lucide-react';
+import headshot from '../img/headshot.jpg';
 import { personalInfo } from '../data';
 
 interface HeroProps {
@@ -201,17 +202,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCVModal }) => {
                 <div className="my-6 flex flex-col items-center">
                   <div className="relative w-36 h-36 rounded-2xl bg-gradient-to-tr from-navy-950 via-navy-900 to-navy-800 p-1 shadow-xl border-2 border-gold-500/50 flex items-center justify-center overflow-hidden">
                     
-                    <div className="w-full h-full rounded-xl bg-navy-950 flex flex-col items-center justify-center p-3 text-center relative">
-                      <div className="w-14 h-14 rounded-full bg-navy-900 border border-gold-500/60 flex items-center justify-center text-white font-mono font-bold text-xl shadow-inner mb-2">
-                        DA
-                      </div>
-                      <span className="text-xs font-bold text-white tracking-wide">
-                        Dare Aladeokin
-                      </span>
-                      <span className="text-[10px] text-slate-400 font-mono">
-                        University of Ibadan
-                      </span>
-                    </div>
+                    <div className="w-full h-full rounded-xl bg-navy-950 flex items-center justify-center overflow-hidden">
+  <img src={headshot} alt="Dare Aladeokin" className="w-full h-full object-cover rounded-2xl" />
+</div>
 
                     {/* Subtle grid pattern overlay */}
                     <div className="absolute inset-0 bg-[radial-gradient(#3157A4_1px,transparent_1px)] [background-size:10px_10px] opacity-30 pointer-events-none" />
