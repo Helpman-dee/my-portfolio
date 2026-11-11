@@ -7,7 +7,7 @@ export const educationList: Education[] = [
     field: "Data Science",
     institution: "University of Ibadan",
     location: "Ibadan, Oyo State, Nigeria",
-    period: "2026 - Present",
+    period: "2025/2026 academic session",
     status: "In Progress",
     thesisOrFocus: "Automated Detection of Cervical Lesions in Colposcopy Images Using Deep Learning (Computer Vision & Explainable AI).",
     relevantCoursework: [
