@@ -1,13 +1,13 @@
 import React from 'react';
-import { 
-  ArrowRight, 
-  Download, 
-  Mail, 
-  Linkedin, 
-  Github, 
-  GraduationCap, 
-  Building2, 
-  MapPin, 
+import {
+  ArrowRight,
+  Download,
+  Mail,
+  Linkedin,
+  Github,
+  GraduationCap,
+  Building2,
+  MapPin,
   ShieldCheck,
   BrainCircuit,
   Database,
@@ -33,8 +33,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCVModal }) => {
   };
 
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="relative min-h-[92vh] flex items-center pt-28 pb-16 overflow-hidden bg-grid-pattern"
     >
       {/* Ambient background glows */}
@@ -43,10 +43,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCVModal }) => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
-          
+
           {/* Left Column: Text & Positioning */}
           <div className="lg:col-span-7 flex flex-col items-start space-y-6">
-            
+
             {/* Professional Status & Dual Affiliation Pill */}
             <div className="flex flex-wrap items-center gap-2">
               <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-navy-100/80 text-navy-900 dark:bg-navy-900 dark:text-navy-200 border border-navy-200 dark:border-navy-700/70 shadow-xs">
@@ -62,12 +62,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCVModal }) => {
             {/* Name & Title */}
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-navy-600 dark:text-gold-400 font-semibold block mb-2">
-                Curriculum Vitae & Research Dossier
+                Curriculum Vitae
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-navy-950 dark:text-white leading-[1.08]">
                 {personalInfo.name}
               </h1>
-              
+
               <div className="mt-3 flex flex-wrap items-center gap-2 text-base sm:text-lg font-mono font-medium text-navy-700 dark:text-gold-400">
                 <span>Data Scientist</span>
                 <span className="text-slate-300 dark:text-slate-600">•</span>
@@ -134,7 +134,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCVModal }) => {
               <span className="text-xs font-mono uppercase tracking-wider text-slate-400 dark:text-slate-500">
                 Verified Profiles:
               </span>
-              
+
               <a
                 href={personalInfo.socialLinks[0].url}
                 target="_blank"
@@ -181,30 +181,27 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCVModal }) => {
           {/* Right Column: Executive Academic Dossier Card */}
           <div className="lg:col-span-5 flex justify-center relative">
             <div className="relative w-full max-w-md">
-              
+
               {/* Executive Dossier Card */}
               <div className="glass-panel p-6 sm:p-7 rounded-3xl shadow-premium border border-slate-200/90 dark:border-navy-700/70 relative overflow-hidden">
-                
+
                 {/* Dossier Header */}
                 <div className="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-navy-800">
                   <div className="flex items-center space-x-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
                     <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
-                      Scholar Profile
+                      Profile
                     </span>
                   </div>
-                  <span className="text-xs font-mono text-gold-700 dark:text-gold-400 bg-gold-50 dark:bg-gold-950/60 px-2.5 py-0.5 rounded-md border border-gold-200 dark:border-gold-800/60 font-semibold">
-                    UI-PG-MSc
-                  </span>
                 </div>
 
                 {/* Distinguished Portrait & Monogram Badge */}
                 <div className="my-6 flex flex-col items-center">
                   <div className="relative w-36 h-36 rounded-2xl bg-gradient-to-tr from-navy-950 via-navy-900 to-navy-800 p-1 shadow-xl border-2 border-gold-500/50 flex items-center justify-center overflow-hidden">
-                    
+
                     <div className="w-full h-full rounded-xl bg-navy-950 flex items-center justify-center overflow-hidden">
-  <img src={headshot} alt="Dare Aladeokin" className="w-full h-full object-cover rounded-2xl" />
-</div>
+                      <img src={headshot} alt="Dare Aladeokin" className="w-full h-full object-cover rounded-2xl" />
+                    </div>
 
                     {/* Subtle grid pattern overlay */}
                     <div className="absolute inset-0 bg-[radial-gradient(#3157A4_1px,transparent_1px)] [background-size:10px_10px] opacity-30 pointer-events-none" />
